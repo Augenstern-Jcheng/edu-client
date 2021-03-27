@@ -1,8 +1,10 @@
 <template>
   <div class='app-header'>
-    <el-breadcrumb separator="/">
+    <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item :to="{ path: '/' }">Home</el-breadcrumb-item>
       <el-breadcrumb-item><a href="/">课程管理</a></el-breadcrumb-item>
+      <el-breadcrumb-item>活动详情</el-breadcrumb-item>
+      <el-breadcrumb-item>活动详情</el-breadcrumb-item>
     </el-breadcrumb>
     <el-dropdown>
       <span class="el-dropdown-link">
@@ -35,6 +37,7 @@ export default {
   },
   created () {
     this.loadUserInfo()
+    console.log(this.$route)
   },
   methods: {
     async loadUserInfo () {
@@ -85,6 +88,9 @@ export default {
         }
         .el-icon-arrow-down {
           font-size: 12px;
+        }
+      ::v-deep .el-icon-arrow-right:before {
+          color:rgb(25, 85, 155)
         }
   }
 </style>

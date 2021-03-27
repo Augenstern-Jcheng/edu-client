@@ -41,7 +41,7 @@ export default {
         background-color: rgb(202, 190, 190);
       }
       .el-main{
-        background-color: #fff;
+        background-color: rgba(129, 126, 126, 0.5);
       }
     }
   }

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import CreateOrEdit from './commpents/createOrEdit.vue'
+import CreateOrEdit from './components/createOrEdit.vue'
 export default {
   name: 'MenuEdit',
   components: {

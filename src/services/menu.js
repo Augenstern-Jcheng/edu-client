@@ -41,3 +41,28 @@ export function editMenuPage (id) {
     }
   })
 }
+
+export function getMenuNodeList () {
+  return requset({
+    method: 'GET',
+    url: '/boss/menu/getMenuNodeList'
+  })
+}
+
+export function setAllocateRoleMenus (data) {
+  return requset({
+    method: 'POST',
+    url: '/boss/menu/allocateRoleMenus',
+    data
+  })
+}
+
+export function getRoleMenus (roleId) {
+  return requset({
+    method: 'GET',
+    url: '/boss/menu/getRoleMenus',
+    params: {
+      roleId
+    }
+  })
+}

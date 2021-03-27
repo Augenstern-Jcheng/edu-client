@@ -1,10 +1,20 @@
 <template>
-  <div class="course">课程管理</div>
+  <div class="course">
+    <course-list></course-list>
+  </div>
 </template>
 
 <script>
+import courseList from './components/list'
 export default {
-  name: 'course'
+  name: 'course',
+  components: {
+    courseList
+  }
 }
 </script>
-<style lang='scss' scoped></style>
+<style lang='scss' scoped>
+.createBtn{
+  margin-left: 100px;
+}
+</style>

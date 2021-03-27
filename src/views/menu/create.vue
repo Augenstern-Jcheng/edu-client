@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import CreateOrEdit from './commpents/createOrEdit'
+import CreateOrEdit from './components/createOrEdit'
 
 export default {
   name: 'MenuCreate',

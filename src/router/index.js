@@ -70,6 +70,34 @@ const routes = [
         path: '/:id/menu-edit',
         name: 'MenuEdit',
         component: () => import(/* webpackChunkName: 'menu-edit' */'@/views/menu/edit')
+      },
+      {
+        path: '/:roleId/distallocate-menus',
+        name: 'AllocateMenus',
+        component: () => import(/* webpackChunkName: 'AllocateMenus' */'@/views/role/allocate/menus')
+      },
+      {
+        path: '/:roleId/allocate-res',
+        name: 'AllocateRes',
+        component: () => import(/* webpackChunkName: 'AllocateRes' */'@/views/role/allocate/resources')
+      },
+      {
+        path: '/:courseId/course-create-or-edit',
+        name: 'CreateOrEdit',
+        props: true,
+        component: () => import(/* webpackChunkName: 'CreateOrEdit' */'@/views/course/createOrEdit')
+      },
+      {
+        path: '/:courseId/course-content',
+        name: 'CourseContent',
+        props: true,
+        component: () => import(/* webpackChunkName: 'CourseContent' */'@/views/course/courseContent')
+      },
+      {
+        path: '/:courseId/up-data-video',
+        name: 'UpDataVideo',
+        props: true,
+        component: () => import(/* webpackChunkName: 'CourseContent' */'@/views/course/components/updataVideo')
       }
     ]
   },

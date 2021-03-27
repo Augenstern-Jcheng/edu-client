@@ -39,7 +39,7 @@
               <el-button @click="handleDelete(scope.row)" type="danger">删除</el-button>
             </template>
           </el-table-column>
-        </el-table>
+       </el-table>
     </el-card>
   </div>
 </template>
@@ -47,7 +47,7 @@
 <script>
 import { getAllMenu, deleteMenu } from '@/services/menu'
 export default {
-  name: 'menu',
+  name: 'menus',
   data () {
     return {
       menuData: []
@@ -59,7 +59,6 @@ export default {
   methods: {
     // 修改
     handleEdit (rowData) {
-      console.log(rowData)
       this.$router.push({
         name: 'MenuEdit',
         params: {
