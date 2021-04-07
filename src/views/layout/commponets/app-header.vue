@@ -37,7 +37,7 @@ export default {
   },
   created () {
     this.loadUserInfo()
-    console.log(this.$route)
+    // console.log(this.$route)
   },
   methods: {
     async loadUserInfo () {
