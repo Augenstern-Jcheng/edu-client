@@ -1,4 +1,4 @@
-# edu-boss-fed-cj
+# edu-client
 
 ## Project setup
 ```
