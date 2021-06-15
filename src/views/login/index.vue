@@ -31,7 +31,7 @@ export default {
         password: '111111'
       },
       isLoading: false,
-      login_title: 'EDU BOSS 管理系统',
+      login_title: 'EDU Client 系统',
       // 规则校验
       rules: {
         phone: [

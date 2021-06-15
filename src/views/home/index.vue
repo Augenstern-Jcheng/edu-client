@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="content">
-      welcome to edu-boss-fed-cj
+      welcome to edu client
     </div>
   </div>
 </template>
